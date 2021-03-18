@@ -1,0 +1,91 @@
+{
+  "data": {
+    "banner": [
+      {
+        "id": 1,
+        "name": "717",
+        "pic": "https://img.alicdn.com/imgextra/i4/913168420/O1CN018FpU8s2C4PVB9ZNKP_!!913168420.png",
+        "url": "https://tv.cctv.com/live/cctv13/?spm=C28340.P4hQlpYBT2vN.ExidtyEJcS5K.25",
+        "color": "1",
+        "type": "app://webPlug",
+        "show": false
+      }
+    ],
+    "activity": [
+      {
+        "id": 1,
+        "name": "cctv",
+        "pic": "https://img9.doubanio.com/view/activity_page/raw/public/p2166.jpg",
+        "url": "https://gitee.com/sdswxw/freed/raw/master/live/cctv.m3u",
+        "color": "11",
+        "type": "app://m3u",
+        "show": true
+      },
+      {
+        "id": 1,
+        "name": "历史记录",
+        "pic": "https://img3.doubanio.com/view/activity_page/raw/public/p4200.jpg",
+        "url": "https://gitee.com/sdswxw/freed/raw/master/mobile/update.html",
+        "color": "11",
+        "type": "app://history",
+        "show": true
+      },
+      {
+        "id": 1,
+        "name": "IHOT",
+        "pic": "https://img3.doubanio.com/view/activity_page/raw/public/p2170.jpg",
+        "url": "https://gitee.com/sdswxw/freed/raw/master/live/ihot.m3u",
+        "color": "11",
+        "type": "app://m3u",
+        "show": true
+      },
+      {
+        "id": 2,
+        "name": "电视直播",
+        "pic": "https://img9.doubanio.com/view/activity_page/raw/public/p2166.jpg",
+        "url": "https://gitee.com/sdswxw/freed/raw/master/live/new.m3u",
+        "color": "11",
+        "type": "app://m3u",
+        "show": true
+      },
+      {
+        "id": 2,
+        "name": "24小时轮播",
+        "pic": "https://img9.doubanio.com/view/activity_page/raw/public/p2166.jpg",
+        "url": "https://gitee.com/sdswxw/freed/raw/master/live/youku.json",
+        "color": "11",
+        "type": "app://gitJson",
+        "show": true
+      },
+      {
+        "id": 3,
+        "name": "NewTV",
+        "pic": "https://img1.doubanio.com/view/activity_page/raw/public/p3728.jpg",
+        "url": "https://gitee.com/sdswxw/freed/raw/master/live/NewTV.m3u",
+        "color": "11",
+        "type": "app://m3u",
+        "show": true
+      },
+      {
+        "id": 3,
+        "name": "动画电影",
+        "pic": "https://img1.doubanio.com/view/activity_page/raw/public/p2648.jpg",
+        "url": "https://gitee.com/sdswxw/freed/raw/master/mobile/newtv.m3u",
+        "color": "1",
+        "type": "app://m3u",
+        "show": false
+      },
+
+
+      {
+        "id": 1,
+        "name": "",
+        "pic": "http://img-haodanku-com.cdn.fudaiapp.com/FlorCl6BGl2H9IbVyLZSz47iQHqc",
+        "url": "https://gitee.com/sdswxw/raw/master/html/jd_activity.html",
+        "color": "11",
+        "type": "app://updateInfo",
+        "show": false
+      }
+    ]
+  }
+}
