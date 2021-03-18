@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <iframe src="https://ncov.dxy.cn/ncovh5/view/pneumonia" id="content" scrolling="auto" frameborder="0"
+        width="100%"></iframe>
+    <script>
+        $(document).ready(function () {
+            //高度设置
+            setHeight();
+        })
+        function setHeight() {
+            //var ifm= document.getElementById("content");
+            $('#content').height($(window).height());
+        }
+        window.onresize = function () {
+            setHeight();
+        }
+    </script>
+</body>
+
+</html>
