@@ -1,0 +1,61 @@
+{
+  "name": "阅读3.0说明",
+  "description": "Legado相关说明",
+  "link": "https://github.com/gedoor/legado",
+  "list": [
+    {
+      "title": "【重要】阿里健康疫情动态",
+      "url": "https://alihealth.taobao.com/medicalhealth/influenzamap",
+      "pic": "https://www.alihealth.cn/images/favicon-128.ico",
+      "time": "实时更新"
+    },
+    {
+      "title": "【必读！！】公告",
+      "url": "http://alanskycn.gitee.io/vip/about/info.html",
+      "pic": "http://wx3.sinaimg.cn/wap720/8fa42897gy1frs1xxp6mrj210z0kuac7.jpg",
+      "time": "2020/3/11・web阅读使用指南"
+    },
+    {
+      "title": "阅读基友-异次元",
+      "url": "https://gitee.com/alanskycn/yuedu/raw/master/JS/RSS/custom/html/other/yiciyuan.html",
+      "pic": "https://gitee.com/alanskycn/yuedu/raw/master/JS/yiciyuan.jpg",
+      "time": "2020/1/14"
+    },
+    {
+      "title": "【Q&A】常见问题",
+      "url": "https://github.com/gedoor/legado/blob/master/app/src/main/assets/help.md",
+      "pic": "http://5b0988e595225.cdn.sohucs.com/images/20180815/ecd7c66885b5459b87a2a0bac115d1f8.jpeg",
+      "time": "2019/12/11"
+    },
+    {
+      "title": "【教程】书源和订阅源规则介绍",
+      "url": "https://alanskycn.gitee.io/teachme/index.html",
+      "pic": "http://pic.big5.dbw.cn/0/07/63/80/7638083_507980.jpg",
+      "time": "2020/09/12"
+    },
+    {
+      "title": "【资源】替换净化",
+      "url": "http://alanskycn.gitee.io/vip/about/replacement.html",
+      "pic": "https://tva1.sinaimg.cn/large/9bd9b167gy1g2rleqsqkcj21hc0u0nec.jpg",
+      "time": "2020/2/21・change a rule"
+    },
+    {
+      "title": "【资源】有声源合集",
+      "url": "http://alanskycn.gitee.io/vip/bk/A1.html",
+      "pic": "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1838471967,1361007031&fm=26&gp=0.jpg",
+      "time": "2020/03/30・fix"
+    },
+    {
+      "title": "【资源】订阅源合集",
+      "url": "http://alanskycn.gitee.io/vip/rss/R1.html",
+      "pic": "http://pic.jj20.com//up/allimg/1113/011H0115G3/20011G15G3-1.jpg",
+      "time": "2020/3/18・add a source"
+    },
+    {
+      "title": "【资源】书源合集",
+      "url": "http://alanskycn.gitee.io/vip/bk/B1.html",
+      "pic": "http://photo.16pic.com/00/33/99/16pic_3399189_b.jpg",
+      "time": "2020/4/13・fix zhaishuyuan"
+    }
+  ]
+}
