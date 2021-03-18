@@ -1,0 +1,155 @@
+<head>
+    <style>
+        img {
+            max-width: 100% !important;
+            width: auto;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="feed-detail">
+        <div class="feed-message" style="margin: 16px;padding-bottom: 10px;">
+            <p style="font-size: 16px;color: #212121;">异次元简介<br>
+                如今的漫画app由于各大平台买断等原因，总是出现某些漫画看不了，手机上需要下载三四个漫画app才能满足的情况，于是可自由添加图源的免费聚合漫画app来啦！你不用再担心找不到想看的漫画！找不到漫画？自己动手做个图源！<br>
+                <br>
+                异次元功能特点介绍<br>
+                界面简洁干净<br>
+                可自由制作添加图源和发现<br>
+                拥有多种翻页方式和阅读模式<br>
+                可对漫画进行下载缓存，方便无网络时观看<br>
+                更多功能正在开发完善中。。。<br>
+                <br></p>
+            <p>异次元app获取方式：加入QQ群（640642921、647922611、959441950、146039004、1002699263）</p>
+            <p>图源获取方式:搜索微信号<font color="red">异次元APP软件</font>或<font color="red">yiciyuanapp</font>
+            </p>
+        </div>
+        <div class="message-image-group" style="margin: 0 16px;display: flex;flex-wrap: wrap;">
+            <div class="message-image-item" style="overflow: hidden; width: 31%; height: 176px; margin: 1%;">
+                <img class="message-image"
+                    src="http://image.coolapk.com/feed/2019/0225/21/1024615_1551101251_0529@1080x1920.jpg.m.jpg" alt=""
+                    style="width: 176px; margin-top: -68.5px;">
+            </div>
+            <div class="message-image-item" style="overflow: hidden; width: 31%; height: 176px; margin: 1%;">
+                <img class="message-image"
+                    src="http://image.coolapk.com/feed/2019/0225/21/1024615_1551101253_0402@1080x1920.jpg.m.jpg" alt=""
+                    style="width: 176px; margin-top: -68.5px;">
+            </div>
+            <div class="message-image-item" style="overflow: hidden; width: 31%; height: 176px; margin: 1%;">
+                <img class="message-image"
+                    src="http://image.coolapk.com/feed/2019/0225/21/1024615_1551101255_1147@1080x1920.jpg.m.jpg" alt=""
+                    style="width: 176px; margin-top: -68.5px;">
+            </div>
+            <div class="message-image-item" style="overflow: hidden; width: 31%; height: 176px; margin: 1%;">
+                <img class="message-image"
+                    src="http://image.coolapk.com/feed/2019/0225/21/1024615_1551101257_0078@1080x1920.jpg.m.jpg" alt=""
+                    style="width: 176px; margin-top: -68.5px;">
+            </div>
+            <div class="message-image-item" style="overflow: hidden; width: 31%; height: 176px; margin: 1%;">
+                <img class="message-image"
+                    src="http://image.coolapk.com/feed/2019/0225/21/1024615_1551101259_1466@1080x1920.jpg.m.jpg" alt=""
+                    style="width: 176px; margin-top: -68.5px;">
+            </div>
+            <div class="message-image-item" style="overflow: hidden; width: 31%; height: 176px; margin: 1%;">
+                <img class="message-image"
+                    src="http://image.coolapk.com/feed/2019/0225/21/1024615_1551101261_1672@1080x1920.jpg.m.jpg" alt=""
+                    style="width: 176px; margin-top: -68.5px;">
+            </div>
+        </div>
+        <script>
+            var options = {
+                fullscreenEl: false,
+                pinchToClose: true,
+                tapToClose: true,
+                showHideOpacity: true,
+                getThumbBoundsFn: false,
+                shareButtons: [
+                    { id: 'download', label: '保存原图', url: '{{raw_image_url}}', download: true }
+                ],
+                index: 0
+            };
+            var innerWidth = window.innerWidth;
+            if (innerWidth > 1000) {
+                innerWidth = 600;
+            }
+            var messageImageItemArr = document.getElementsByClassName('message-image-item');
+            var messageImageArr = document.getElementsByClassName('message-image');
+            window.addEventListener("load", function (ev) {
+                if (messageImageItemArr.length > 0) {
+                    Array.prototype.forEach.call(messageImageItemArr, function (element, i) {
+                        messageImageArr[i].addEventListener('click', function (ev1) {
+                            var pswpElement = document.getElementsByClassName('pswp')[0];
+                            var items = [];
+                            for (var $i = 0; $i < messageImageArr.length; $i++) {
+                                var $object = {
+                                    src: messageImageArr[$i].src,
+                                    w: getImageWidthAndHeight(messageImageArr[$i]).width,
+                                    h: getImageWidthAndHeight(messageImageArr[$i]).height
+                                };
+                                items.push($object)
+                            }
+                            options.index = i;
+                            var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+                            gallery.init();
+                        });
+                    });
+                    // 动态详情单图
+                    if (messageImageItemArr.length === 1) {
+                        // 设置图片外壳最高高度为屏幕宽度的2/3
+                        messageImageItemArr[0].style.maxHeight = innerWidth / 3 * 2 + 'px';
+                        // 图片过高
+                        if (getImageWidthAndHeight(messageImageArr[0]).height / getImageWidthAndHeight(messageImageArr[0]).width > 18 / 9) {
+                            // 超长单图默认宽度为屏幕尺寸的一半
+                            messageImageItemArr[0].style.width = '50%';
+                            // 高度为屏幕宽度的2/3
+                            messageImageItemArr[0].style.height = innerWidth / 3 * 2 + 'px';
+                            // 图片宽度为其可用高度的一半
+                            messageImageArr[0].style.width = innerWidth / 3 * 2 / 18 * 9 + 'px';
+                            // 图片过宽
+                        } else if (getImageWidthAndHeight(messageImageArr[0]).width / getImageWidthAndHeight(messageImageArr[0]).height > 18 / 9) {
+                            // 图片宽度为屏幕宽度的2/3
+                            messageImageItemArr[0].style.width = innerWidth / 3 * 2 + 'px';
+                            // 高度为其可用宽度的一半
+                            messageImageArr[0].style.height = innerWidth / 3 * 2 / 18 * 9 + 'px';
+                        } else if (getImageWidthAndHeight(messageImageArr[0]).width >= getImageWidthAndHeight(messageImageArr[0]).height) {
+                            // 图片为横图
+                            messageImageItemArr[0].style.maxHeight = '';
+                            messageImageArr[0].style.maxWidth = '100%';
+                            messageImageArr[0].style.width = '100%';
+                        } else {
+                            // 图片为竖图
+                            messageImageItemArr[0].style.maxHeight = '';
+                            messageImageArr[0].style.maxHeight = '100%';
+                            messageImageArr[0].style.width = '100%';
+                        }
+                    } else {
+                        for (var i = 0; i < messageImageItemArr.length; i++) {
+                            // 多图情况下宽高比为1/1
+                            messageImageItemArr[i].style.height = messageImageItemArr[i].offsetWidth + 'px';
+                            if (getImageWidthAndHeight(messageImageArr[i]).width / messageImageItemArr[i].offsetWidth >= getImageWidthAndHeight(messageImageArr[i]).height / messageImageItemArr[i].offsetHeight) {
+                                // 图片为横图
+                                messageImageArr[i].style.height = messageImageItemArr[i].offsetHeight + 'px';
+                                messageImageArr[i].style.marginLeft = (messageImageItemArr[i].offsetWidth - messageImageArr[i].offsetWidth) / 2 + 'px';
+                            } else {
+                                // 图片为竖图
+                                messageImageArr[i].style.width = messageImageItemArr[i].offsetWidth + 'px';
+                                messageImageArr[i].style.marginTop = (messageImageItemArr[i].offsetHeight - messageImageArr[i].offsetHeight) / 2 + 'px';
+                            }
+                        }
+                    }
+                }
+            });
+        </script>
+        <script>
+            function getImageWidthAndHeight(imgElement) {
+                var image = new Image();
+                image.src = imgElement.src;
+                var object = {};
+                object.width = image.width;
+                object.height = image.height;
+                return object;
+            }
+        </script>
+    </div>
+</body>
