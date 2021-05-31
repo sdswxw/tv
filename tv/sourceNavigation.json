@@ -36,8 +36,8 @@
     {
       "name": "斗鱼",
       "pic": "https://tva4.sinaimg.cn/large/a15b4afely1fnt9plhh8oj21hc0u0dxy.jpg",
-      "url": "https://gitee.com/sdswxw/freed/raw/master/live/douyu.txt",
-      "type": "txt",
+      "url": "https://gitee.com/sdswxw/freed/raw/master/live/危机边缘.m3u",
+      "type": "m3u",
       "subTitle": "",
       "click": true,
       "autoNext": false,
